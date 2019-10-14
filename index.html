@@ -4,6 +4,7 @@
     <script>
          window.addEventListener('message',function(event) {
 	console.log('received response:  ',event.data);
+        document.getElementById(id).innerHTML = event.data; 
 },false);
     </script>
     </body>

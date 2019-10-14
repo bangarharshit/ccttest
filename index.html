@@ -1,5 +1,10 @@
 <html>
     <body>
     This is the body.
+    <script>
+         window.addEventListener('message',function(event) {
+	console.log('received response:  ',event.data);
+},false);
+    </script>
     </body>
 </html>

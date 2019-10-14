@@ -1,10 +1,11 @@
 <html>
     <body>
     This is the body.
+    <div id="dynamic"></div>
     <script>
          window.addEventListener('message',function(event) {
 	console.log('received response:  ',event.data);
-        document.getElementById(id).innerHTML = event.data; 
+        document.getElementById("dynamic").innerHTML = event.data; 
 },false);
     </script>
     </body>
